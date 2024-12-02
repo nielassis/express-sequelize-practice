@@ -7,7 +7,8 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("employees", {
       id: {
-        type: DataTypes.UUID,
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
         allowNull: false,
         primaryKey: true,
       },
@@ -15,7 +16,7 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      hireDate: {
+      hire_date: {
         type: DataTypes.DATE,
         allowNull: false,
       },
