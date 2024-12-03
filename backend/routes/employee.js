@@ -2,13 +2,14 @@ const express = require("express");
 const router = express.Router();
 const { Employees, Position } = require("../models");
 const employeeController = require("../controllers/employee");
+const authMiddleware = require("../middleware/middleware");
 
-router.get("/", employeeController.findAllEmployees);
+router.get("/", authMiddleware, employeeController.findAllEmployees);
 
-router.post("/", employeeController.createEmployee);
+router.post("/", authMiddleware, employeeController.createEmployee);
 
-router.put("/:id", employeeController.updateEmployee);
+router.put("/:id", authMiddleware, employeeController.updateEmployee);
 
-router.delete("/:id", employeeController.destroyEmployee);
+router.delete("/:id", authMiddleware, employeeController.destroyEmployee);
 
 module.exports = router;
