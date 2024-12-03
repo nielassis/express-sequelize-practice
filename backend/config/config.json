@@ -1,9 +1,10 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "password": "SAuGGymogmZNHNWWuNkysQzVPohYLCqt",
+    "database": "railway",
+    "host": "junction.proxy.rlwy.net",
+    "port": 46852,
     "dialect": "mysql"
   },
   "test": {
@@ -15,9 +16,10 @@
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "SAuGGymogmZNHNWWuNkysQzVPohYLCqt",
+    "database": "railway",
+    "host": "junction.proxy.rlwy.net",
+    "port": 46852,
     "dialect": "mysql"
   }
 }
